@@ -1,0 +1,64 @@
+:root {
+  --text-color: #1a1a1a;
+}
+
+body {
+  color: var(--text-color);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  width: 100%;
+  max-width: 500px;
+  padding: 16px;
+  margin: 0 auto;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word-wrapper > h1 {
+  cursor: pointer;
+}
+
+.word-wrapper > p {
+  position: absolute;
+  opacity: 0;
+  bottom: -10px;
+  background-color: lightgoldenrodyellow;
+}
+
+.button-wrapper > button {
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 16px;
+  column-gap: 4px;
+}
+
+footer p,
+a {
+  color: var(--text-color);
+}
